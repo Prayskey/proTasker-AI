@@ -71,8 +71,8 @@ export default function Sidebar({
         </div>
 
         <div className="py-5 border-t border-slate-800 flex items-center gap-3 mt-auto">
-          <div className="w-8 h-8 rounded-full bg-gradient-to-tr from-amber-500 to-orange-600 flex items-center justify-center font-bold text-slate-950 text-xs shrink-0">JD</div>
-          <div className="flex flex-col truncate"><span className="text-xs font-semibold text-slate-200">John Doe</span></div>
+          <div className="w-8 h-8 rounded-full bg-gradient-to-tr from-amber-500 to-orange-600 flex items-center justify-center font-bold text-slate-950 text-xs shrink-0">OP</div>
+          <div className="flex flex-col truncate"><span className="text-xs font-semibold text-slate-200">Ogbonna Prayskey</span></div>
         </div>
       </aside>
     </>
