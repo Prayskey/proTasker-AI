@@ -1,15 +1,14 @@
 import React from "react";
+import { Link } from "react-router-dom"; // <-- 1. Import Link from React Router
 
 export default function Hero() {
   return (
     <section className="relative min-h-screen bg-gradient-to-b from-slate-50 via-white to-slate-50 flex flex-col justify-center items-center pt-28 sm:pt-36 pb-12 sm:pb-20 px-4 sm:px-6 overflow-hidden">
       
-      {/* Dynamic Background Blur Vector Components */}
       <div className="absolute top-20 left-1/2 -translate-x-1/2 w-72 sm:w-[500px] h-72 sm:h-[500px] bg-blue-400/10 blur-[80px] sm:blur-[120px] rounded-full pointer-events-none" />
 
       <div className="max-w-4xl mx-auto text-center space-y-6 sm:space-y-8 relative z-10 w-full">
         
-        {/* Accent Tag */}
         <div className="inline-flex items-center gap-2 bg-blue-50 border border-blue-100 px-3 sm:px-4 py-1.5 rounded-full shadow-sm">
           <span className="w-1.5 h-1.5 rounded-full bg-blue-500 animate-pulse"></span>
           <p className="text-blue-600 font-bold text-[10px] sm:text-[11px] tracking-widest uppercase">
@@ -17,7 +16,6 @@ export default function Hero() {
           </p>
         </div>
 
-        {/* Scaled Responsive Text Header Layout */}
         <h1 className="text-3xl sm:text-5xl md:text-6xl font-black text-slate-900 tracking-tight leading-[1.2] sm:leading-[1.15] max-w-3xl mx-auto px-2">
           Discover a New Era of Task Management with{" "}
           <span className="bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent block sm:inline">
@@ -29,21 +27,21 @@ export default function Hero() {
           Streamline workflows, automate scheduling, and align your team’s delivery performance with our next-generation task intelligence engine.
         </p>
 
-        {/* Button Stack Configurations */}
+        {/* 2. Swapped old <a> anchors for clean, optimized <Link> components */}
         <div className="flex flex-col sm:flex-row justify-center items-center gap-3 sm:gap-4 pt-2 max-w-sm sm:max-w-none mx-auto w-full px-4">
-          <a href="#dashboard" className="w-full sm:w-auto">
+          <Link to="/dashboard" className="w-full sm:w-auto">
             <button className="w-full sm:w-auto px-8 py-3.5 text-white bg-blue-600 hover:bg-blue-700 active:scale-[0.98] rounded-xl font-bold text-xs sm:text-sm tracking-wide transition-all shadow-md shadow-blue-600/10">
               GET STARTED NOW
             </button>
-          </a>
-          <a href="#dashboard" className="w-full sm:w-auto">
+          </Link>
+          <Link to="/dashboard" className="w-full sm:w-auto">
             <button className="w-full sm:w-auto px-8 py-3.5 text-slate-700 bg-white hover:bg-slate-50 border border-slate-200 rounded-xl font-bold text-xs sm:text-sm tracking-wide transition-all shadow-sm">
-              SIGN UP FOR FREE
+              EXPLORE WORKSPACE
             </button>
-          </a>
+          </Link>
         </div>
 
-        {/* Responsive Grid Data Rows */}
+        {/* Data Rows */}
         <div className="pt-8 sm:pt-10 grid grid-cols-3 gap-2 sm:gap-x-8 max-w-lg mx-auto border-t border-slate-100 text-center">
           <div className="flex flex-col">
             <span className="text-lg sm:text-2xl font-black text-slate-900">99.4%</span>
